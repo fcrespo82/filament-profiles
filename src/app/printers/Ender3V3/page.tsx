@@ -1,7 +1,5 @@
 
 
-
-
 export default async function Ender3V3() {
     const data = await fetch('http://localhost:3000/profiles/Ender3V3')
     const profiles = await data.json()
@@ -13,11 +11,11 @@ export default async function Ender3V3() {
                 <h3>Profiles</h3>
 
                 <ul>
-                { profiles.map((profile) => {
-                    return (
-                        <li key={profile.name}>{profile.name}</li>
-                    )
-                })}
+                    {profiles.map((profile: { name: string | null | undefined }) => {
+                        return (
+                            <li key={profile.name}>{profile.name}</li>
+                        )
+                    })}
                 </ul>
             </aside>
         </main>
