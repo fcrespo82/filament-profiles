@@ -1,6 +1,8 @@
-export function GET() {
+export function GET(printer: string) {
 
-    let profiles = [
+    
+
+    const profiles = [
         {
             name: "Profile 1"
         }

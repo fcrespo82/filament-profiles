@@ -3,8 +3,8 @@
 
 
 export default async function Ender3V3() {
-    let data = await fetch('http://localhost:3000/profiles/Ender3V3')
-    let profiles = await data.json()
+    const data = await fetch('http://localhost:3000/profiles/Ender3V3')
+    const profiles = await data.json()
 
     return (
         <main>
