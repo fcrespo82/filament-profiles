@@ -1,6 +1,5 @@
-export function GET(printer: string) {
+export function GET() {
 
-    
 
     const profiles = [
         {
